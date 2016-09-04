@@ -1,0 +1,11 @@
+/* Styles go here */
+div {
+    text-align: center;
+
+}
+
+img {
+    margin-top: 10px;
+    border-radius: 20px;
+    text-align: center
+}
