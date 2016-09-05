@@ -45,19 +45,23 @@ var Main = React.createClass({
         return { logins: [] };
     },
     addCard: function(loginToAdd){
-       var dupe_count = 0;
-       this.state.logins.forEach(function(el, ind, arr){
-           console.log(el);
-            if (el == loginToAdd) {
-                dupe_count++
-            }
-       });
-        console.log(dupe_count);
-        if (dupe_count >= 1){
-            dupe_count = 0;
-            return;
-        }
-        else {
+       // var dupe_count = 0;
+       // this.state.logins.forEach(function(el, ind, arr){
+       //     console.log(el);
+       //      if (el == loginToAdd) {
+       //          dupe_count++
+       //      }
+       // });
+       //  console.log(dupe_count);
+       //  if (dupe_count >= 1){
+       //      dupe_count = 0;
+       //      return;
+       //  }
+       //  else {
+       //      this.setState({logins: this.state.logins.concat(loginToAdd)});
+       //  }
+
+        if (this.state.logins.indexOf(loginToAdd) < 0){
             this.setState({logins: this.state.logins.concat(loginToAdd)});
         }
 
@@ -67,7 +71,7 @@ var Main = React.createClass({
             return(<Card key={i} login={login} />);
         });
         return (
-            <div>
+            <div className="well">
                 <Form addCard={this.addCard}/>
                 {cards}
             </div>
