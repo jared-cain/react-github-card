@@ -1,0 +1,29 @@
+{
+  "name": "@jcain7/react-github-card",
+  "version": "1.0.0",
+  "description": "A simple react github card",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jared-cain/react-github-card.git"
+  },
+  "keywords": [
+    "react",
+    "node",
+    "javascript",
+    "github",
+    "bootstrap"
+  ],
+  "author": "jared cain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jared-cain/react-github-card/issues"
+  },
+  "homepage": "https://github.com/jared-cain/react-github-card#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
